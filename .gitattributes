@@ -1,0 +1,62 @@
+# Handle line endings automatically for files detected as text
+# and leave all binary files as they are.
+* text=auto
+
+# Explicitly identify text files to ensure they are normalized on check-out
+# so they can be edited on Windows and Mac without issues.
+*.cs text diff=csharp
+*.shader text
+*.cginc text
+*.hlsl text
+*.xml text
+*.json text
+*.yaml text
+*.txt text
+*.md text
+*.gitignore text
+
+# Unity files
+*.meta text merge=unityyamlmerge
+*.unity binary
+*.asset binary
+*.prefab binary
+*.mat binary
+*.anim binary
+*.controller binary
+*.overrideController binary
+*.physicMaterial binary
+*.physicsMaterial2D binary
+*.playable binary
+*.mask binary
+*.brush binary
+*.terrainlayer binary
+*.mixer binary
+
+# Image files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.tga binary
+*.gif binary
+*.psd binary
+*.bmp binary
+*.tif binary
+*.tiff binary
+*.exr binary
+
+# Audio files
+*.wav binary
+*.mp3 binary
+*.ogg binary
+*.aif binary
+*.aiff binary
+
+# Font files
+*.ttf binary
+*.otf binary
+
+# Executables
+*.dll binary
+*.so binary
+*.dylib binary
+*.exe binary
